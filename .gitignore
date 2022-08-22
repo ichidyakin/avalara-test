@@ -1,0 +1,10 @@
+.idea
+.DS_STORE
+node_modules
+.module-cache
+*.log*
+dist
+lib
+coverage
+.serverless
+.vscode

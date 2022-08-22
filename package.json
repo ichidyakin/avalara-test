@@ -1,0 +1,26 @@
+{
+  "name": "avalara-test",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "avatax": "^22.7.0",
+    "csv": "^6.2.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.4"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build",
+    "start": "node lib/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.4"
+  }
+}
